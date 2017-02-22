@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Disappearing Ninjas</title>
+</head>
+<body>
+	{% load staticfiles %}
+		{% if not no %}
+		{% if image %}
+			<img src="{% static image %}" alt=""/>
+		{% else %}
+			<img src="{% static 'disappearingninjas/image/meganfox.jpeg' %}" alt=""/>
+		{% endif %}
+	{% else %}
+			<p>No ninjas here !</p>
+	{% endif %}
+	{# <img src="{% static 'disappearingninjas/image/meganfox.jpeg' %}" alt=""/>#}
+
+</body>
+</html>
